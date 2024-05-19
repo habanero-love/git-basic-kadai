@@ -1,0 +1,19 @@
+kubonene@kubonenenoMacBook-Pro Desktop % mkdir git_challenge
+kubonene@kubonenenoMacBook-Pro Desktop % cd git_challenge
+kubonene@kubonenenoMacBook-Pro git_challenge % git init
+Initialized empty Git repository in /Users/kubonene/Desktop/git_challenge/.git/
+kubonene@kubonenenoMacBook-Pro git_challenge % echo Hello,word! >> hello_world.txt
+kubonene@kubonenenoMacBook-Pro git_challenge % git add hello_world.txt
+
+kubonene@kubonenenoMacBook-Pro git_challenge % git commit -m hello_world.txtを 追加
+[main (root-commit) ba9d404] hello_world.txtを 追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+kubonene@kubonenenoMacBook-Pro git_challenge % echo こんにちは、世界 >> hello_world.txt
+kubonene@kubonenenoMacBook-Pro git_challenge % git add hello_world.txt
+kubonene@kubonenenoMacBook-Pro git_challenge % git commit -m 日本語訳を追記
+[main a7f54d1] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+kubonene@kubonenenoMacBook-Pro git_challenge % git log --oneline
+a7f54d1 (HEAD -> main) 日本語訳を追記
+ba9d404 hello_world.txtを 追加
